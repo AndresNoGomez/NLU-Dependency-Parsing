@@ -28,10 +28,10 @@ def main():
     # parser_mlp.train_models(train_samples, dev_samples, use_prevectorized=True)
 
     # Uncomment this line to -> Train the model and save it to the disk
-    #train_save_final_model(parser_mlp, train_samples, dev_samples, "models/model_trained_final.keras",  use_prevectorized=True)
+    train_save_final_model(parser_mlp, train_samples, dev_samples, "models/model_trained_final.keras",  use_prevectorized=True)
 
     # Load the model
-    parser_mlp.load_model("models/model_trained_final.keras")         
+    # parser_mlp.load_model("models/model_trained_final.keras")         
 
     # Evaluate the model on the development set
     parser_mlp.evaluate(dev_samples, use_prevectorized=True)
